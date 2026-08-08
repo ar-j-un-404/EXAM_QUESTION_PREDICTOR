@@ -1,18 +1,3 @@
-📚 AI Exam Question Predictor
-**An AI-powered application that analyzes multiple exam question papers and predicts the most frequently asked questions using Sentence Transformers and Cosine Similarity. Unlike traditional keyword matching, this project groups semantically similar questions to provide more accurate predictions.**
----
-🚀 Features
-📄 Reads multiple PDF question papers
-🔍 Extracts questions using Regular Expressions (Regex)
-🔢 Supports different question formats such as `1.`, `1)`, `Q1.`, and `Q1)`
-✂️ Removes question numbers from extracted questions
-🧹 Normalizes extracted questions before semantic comparison
-🧠 Converts questions into sentence embeddings using Sentence Transformers (`all-MiniLM-L6-v2`)
-📊 Compares semantic similarity using Cosine Similarity
-🗂️ Groups semantically similar questions
-🔢 Counts the occurrences of similar questions
-📈 Sorts questions based on their frequency
-📋 Displays the most frequently asked questions
 ---# 📚 AI Exam Question Predictor
 
 An AI-powered application that analyzes multiple exam question papers and predicts the most frequently asked questions using **Sentence Transformers** and **Cosine Similarity**.
