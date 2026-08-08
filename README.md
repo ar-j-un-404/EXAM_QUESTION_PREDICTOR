@@ -1,4 +1,4 @@
----# 📚 AI Exam Question Predictor
+# 📚 AI Exam Question Predictor
 
 An AI-powered application that analyzes multiple exam question papers and predicts the most frequently asked questions using **Sentence Transformers** and **Cosine Similarity**.
 
@@ -6,7 +6,7 @@ Unlike traditional keyword matching, this project identifies **semantically simi
 
 ---
 
-# 🚀 Features
+## 🚀 Features
 
 * 📄 Reads multiple PDF question papers
 * 🔍 Extracts questions using Regular Expressions (Regex)
@@ -27,7 +27,7 @@ Unlike traditional keyword matching, this project identifies **semantically simi
 
 ---
 
-# 🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 | Technology            | Purpose                                 |
 | --------------------- | --------------------------------------- |
@@ -41,7 +41,7 @@ Unlike traditional keyword matching, this project identifies **semantically simi
 
 ---
 
-# 📂 Project Structure
+## 📂 Project Structure
 
 ```text
 EXAM_QUESTION_PREDICTOR/
@@ -59,7 +59,7 @@ EXAM_QUESTION_PREDICTOR/
 
 ---
 
-# ⚙️ How It Works
+## ⚙️ How It Works
 
 The application follows a simple NLP-based pipeline:
 
@@ -179,35 +179,10 @@ The number of occurrences of each semantic group is calculated.
 
 The groups are then sorted from **most frequently asked to least frequently asked**.
 
----
-
-# 🧹 Question Normalization
-
-Normalization is performed before generating embeddings so that unnecessary differences in formatting do not affect the comparison.
-
-### Example
-
-**Original question:**
-
-```text
-Q1. What is a Process?
-```
-
-**After removing question number:**
-
-```text
-What is a Process?
-```
-
-**After normalization:**
-
-```text
-what is a process
-```
 
 ---
 
-# 📊 Semantic Question Grouping
+## 📊 Semantic Question Grouping
 
 Traditional keyword matching may fail when two questions use different wording.
 
@@ -228,132 +203,6 @@ Keyword-based comparison may consider them different questions.
 Using sentence embeddings and Cosine Similarity, the application can identify that they are **semantically related** and group them together.
 
 ---
-
-# 📌 Sample Output
-
-```text
-What is a Deadlock? Explain necessary conditions. -> 3
-Explain CPU Scheduling algorithms. -> 3
-What is Virtual Memory? -> 3
-Explain Banker's Algorithm. -> 3
-Explain the process management in Operating Systems. -> 2
-Explain Paging and Segmentation. -> 2
-Explain Process Synchronization. -> 2
-What is a Semaphore? -> 2
-```
-
-The number on the right represents how many times that question, or a semantically similar version of it, appeared across the provided question papers.
-
----
-
-# ▶️ Installation
-
-### Clone the Repository
-
-```bash
-git clone https://github.com/ar-j-un-404/EXAM_QUESTION_PREDICTOR.git
-```
-
-### Navigate to the Project
-
-```bash
-cd EXAM_QUESTION_PREDICTOR
-```
-
-### Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### Add Question Papers
-
-Place your PDF question papers inside:
-
-```text
-papers/
-```
-
-Example:
-
-```text
-papers/
-├── 2017.pdf
-├── 2018.pdf
-├── 2019.pdf
-└── 2020.pdf
-```
-
-### Run the Application
-
-```bash
-python app.py
-```
-
----
-
-# 🔮 Future Improvements
-
-### Semantic Analysis
-
-* Improve semantic grouping using clustering algorithms such as **DBSCAN** or **Agglomerative Clustering**
-* Fine-tune similarity thresholds
-* Improve handling of differently worded questions
-
-### Exam Prediction
-
-* Add topic and syllabus module detection
-* Add recency-based prediction scoring
-* Add prediction confidence levels
-* Identify important and repeated topics
-* Provide explanations for why a question was predicted
-
-### Model Evaluation
-
-* Add **Precision**
-* Add **Recall**
-* Add **F1-score**
-* Add **Top-K Accuracy**
-* Evaluate prediction performance on historical question papers
-
-### RAG Integration
-
-* Add **RAG (Retrieval-Augmented Generation)**
-* Use syllabus documents as additional context
-* Use lecture notes and study materials
-* Retrieve relevant study material for predicted questions
-
-### LLM Integration
-
-* Integrate an LLM for question explanations
-* Generate study recommendations
-* Generate topic summaries
-* Provide personalized preparation suggestions
-
-### User Interface
-
-* Add a **Streamlit web interface**
-* Allow users to upload question papers directly
-* Display predicted questions interactively
-* Show similarity groups and frequency statistics
-
-### Export and Document Support
-
-* Export predictions to **CSV**
-* Export results to **Excel**
-* Support additional document formats:
-
-  * DOCX
-  * TXT
-* Add OCR support for scanned PDF question papers
-
----
-
-# 👨‍💻 Author
-
-**Arjun**
-
-This project was built to explore **Natural Language Processing (NLP)**, **semantic search**, **sentence embeddings**, and **AI-powered document analysis** using modern embedding models.
 
 🛠️ Technologies Used
 Python
@@ -390,7 +239,7 @@ EXAM_QUESTION_PREDICTOR/
 8. Group semantically similar questions.
 9. Count occurrences and rank them by frequency.
 ---
-🧹 Question Normalization
+##🧹 Question Normalization
 Before generating embeddings, extracted questions are normalized to make the text more consistent.
 The current normalization process includes:
 Converting questions to lowercase
