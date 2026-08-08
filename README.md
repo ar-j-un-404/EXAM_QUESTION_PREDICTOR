@@ -302,4 +302,5 @@ What is a Semaphore? -> 2
 ---
 👨‍💻 Author
 Arjun
+
 This project was built to explore Natural Language Processing (NLP), semantic search, and AI-powered document analysis using modern embedding models.
