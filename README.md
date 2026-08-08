@@ -300,7 +300,7 @@ What is a Semaphore? -> 2
 * Support additional document formats such as DOCX and TXT
 * Add OCR support for scanned PDFs
 ---
-👨‍💻 Author
-Arjun
+👨‍💻## Author
+**Arjun**
 
 This project was built to explore Natural Language Processing (NLP), semantic search, and AI-powered document analysis using modern embedding models.
