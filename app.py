@@ -4,6 +4,12 @@ import os
 import re
 from pypdf import PdfReader
 
+def norm_qstn(question):
+   question=question.lower()
+   question=question.strip()
+   question=re.sub(r"[^\w\s]","",question)
+   return question
+
 model=SentenceTransformer("all-MiniLM-L6-v2")
 
 files=os.listdir("papers")
@@ -21,10 +27,10 @@ for file in files:
 
             for line in lines:
                line=line.strip()
-               line = line.strip()
 
-               if re.match(r"^\d+[.)]", line):
-                   line = re.sub(r"^\d+[.)]\s*", "", line)
+               if re.match(r"^Q?\d+[.)]", line):
+                   line = re.sub(r"^Q?\d+[.)]\s*", "", line)
+                   line=norm_qstn(line)
                    questions.append(line)               
          
 
