@@ -1,5 +1,5 @@
 📚 AI Exam Question Predictor
-An AI-powered application that analyzes multiple exam question papers and predicts the most frequently asked questions using Sentence Transformers and Cosine Similarity. Unlike traditional keyword matching, this project groups semantically similar questions to provide more accurate predictions.
+**An AI-powered application that analyzes multiple exam question papers and predicts the most frequently asked questions using Sentence Transformers and Cosine Similarity. Unlike traditional keyword matching, this project groups semantically similar questions to provide more accurate predictions.**
 ---
 🚀 Features
 📄 Reads multiple PDF question papers
