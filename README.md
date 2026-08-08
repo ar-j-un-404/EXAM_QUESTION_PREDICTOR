@@ -8,22 +8,22 @@ Unlike traditional keyword matching, this project identifies **semantically simi
 
 ## 🚀 Features
 
-* 📄 Reads multiple PDF question papers
-* 🔍 Extracts questions using Regular Expressions (Regex)
-* 🔢 Supports multiple question formats:
+*  Reads multiple PDF question papers
+*  Extracts questions using Regular Expressions (Regex)
+*  Supports multiple question formats:
 
   * `1.`
   * `1)`
   * `Q1.`
   * `Q1)`
-* ✂️ Removes question numbers from extracted questions
-* 🧹 Normalizes questions before semantic comparison
-* 🧠 Generates sentence embeddings using `all-MiniLM-L6-v2`
-* 📊 Calculates semantic similarity using Cosine Similarity
-* 🗂️ Groups semantically similar questions
-* 🔢 Counts occurrences of similar questions
-* 📈 Ranks questions based on frequency
-* 📋 Displays the most frequently asked questions
+*  Removes question numbers from extracted questions
+*  Normalizes questions before semantic comparison
+*  Generates sentence embeddings using `all-MiniLM-L6-v2`
+*  Calculates semantic similarity using Cosine Similarity
+*  Groups semantically similar questions
+*  Counts occurrences of similar questions
+*  Ranks questions based on frequency
+*  Displays the most frequently asked questions
 
 ---
 
